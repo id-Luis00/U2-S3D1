@@ -1,34 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://matcha.mizu.sh/matcha.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>esercizi js</title>
-</head>
-<body>
-        <form id="petForm">
-            <label for="petName" >Nome cucciolo</label>
-            <input id="petName" type="text" style="border:1px solid black;" >
+  </head>
 
-            <label for="ownerName">Nome padrone</label>
-            <input id="ownerName" type="text" style="border:1px solid black;">
+  <body data-color-scheme="dark">
+    <form id="petForm" class="flex column">
+      <h1>Inserisci Nuovo Cucciolo</h1>
 
-            <label for="species">Specie</label>
-            <input id="species" type="text" style="border:1px solid black;">
+      <label for="petName">Nome cucciolo <input id="petName" type="text" required /></label>
 
-            <label for="breed">Razza</label>
-            <input id="breed" type="text" style="border:1px solid black;">
+      <label for="ownerName">Nome padrone <input id="ownerName" type="text" required /> </label>
 
-            <button type="submit" style="border: 1px solid black;">Inserisci</button>
-        </form>
+      <label for="species">Specie <input id="species" type="text" required /></label>
 
-        <div id="card">
-            
-        </div>
+      <label for="breed">Razza <input id="breed" type="text" required /> </label>
 
+      <button type="submit">Inserisci</button>
+    </form>
+
+    <div id="card"></div>
 
     <script src="./classes.js"></script>
-
-</body>
+  </body>
 </html>
